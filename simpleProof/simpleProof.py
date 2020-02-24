@@ -14,8 +14,6 @@ myFontPath = 'Verdana'
 
 myFallbackFont = 'AdobeBlank.otf'
 
-myFontPath = '/Users/david/Documents/Typefaces/BulmerDJR/sources/1-drawing/BulmerDJR-Regular.otf'
-
 useFontContainsCharacters = True
 
 # the character set we are proofing
