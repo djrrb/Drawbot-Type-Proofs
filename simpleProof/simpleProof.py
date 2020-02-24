@@ -14,6 +14,10 @@ myFontPath = 'Verdana'
 
 myFallbackFont = 'AdobeBlank.otf'
 
+myFontPath = '/Users/david/Documents/Typefaces/BulmerDJR/sources/1-drawing/BulmerDJR-Regular.otf'
+
+useFontContainsCharacters = True
+
 # the character set we are proofing
 charset = """ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvxyz
@@ -93,6 +97,10 @@ fs = FormattedString('HH HOHO OO\n',
 # loop through all of the characters in our character set
 for char in charset:
     # determine control characters for each character
+    font(myFontPath)
+    if useFontContainsCharacters and not fontContainsCharacters(char):
+        continue
+    
     # ignoring linebreaks and space characters
     if char not in ['\n', ' ']:
         # by default, use H and O
