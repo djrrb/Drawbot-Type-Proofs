@@ -44,7 +44,7 @@ def drawFooter(title):
         fontName = os.path.split(myFontPath)[1]
         
         # assemble footer text
-        footerText = '{date} | {fontName} | {title}'.format(date=today, fontName=fontName, title=title)
+        footerText = f'{today} | {fontName} | {title}'
         
         # and display formatted string
         footer = FormattedString(footerText,
@@ -108,7 +108,7 @@ for char in charset:
             control2 = '1'
         # set up our spacing string in HHXHOHOXOO format
         # using the control characters
-        spacingString = '{control1}{control1}{char}{control1}{control2}{control1}{control2}{char}{control2}{control2}\n'.format(control1=control1, control2=control2, char=char)
+        spacingString = f'{control1}{control1}{char}{control1}{control2}{control1}{control2}{char}{control2}{control2}\n'
         fs.append(spacingString)
 # now, use a while loop to draw each column
 # until we run out of text
