@@ -49,7 +49,7 @@ makeUppercase = False
 # capitalize first letter
 makeCapitalized = True
 
-#use only characters in font
+# use only characters in font
 useFontContainsCharacters = True
 
 openTypeFeaturesDict = {
