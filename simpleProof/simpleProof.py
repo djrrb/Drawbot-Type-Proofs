@@ -18,7 +18,7 @@ useFontContainsCharacters = True
 
 # the character set we are proofing
 charset = """ABCDEFGHIJKLMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvxyz
+abcdefghijklmnopqrstuvwxyz
 0123456789
 .,:; \'" ?! & () [] $#
 """
